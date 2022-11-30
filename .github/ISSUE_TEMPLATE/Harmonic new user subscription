@@ -1,1 +1,52 @@
+name: New user
+description: Subscribe as a new user for Harmonic
+title: "[New user]: "
+labels: ["new user"]
+assignees:
+  - rsimon-adi
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for your interest and engagement with the Harmonic Design System!
+  - type: input
+    id: contact
+    attributes:
+      label: Contact Details
+      description: How can we get in touch with you if we need more info?
+      placeholder: ex. email@example.com
+    validations:
+      required: true
+  - type: input
+    id: name
+    attributes:
+      label: New user
+      description: Subscribe as a new Harmonic user
+      placeholder: dropdown, input, button
+    validations:
+      required: true
+  - type: textarea
+    id: description
+    attributes:
+      label: Tell us about yourself
+      description: Also tell us, can you provide the software products you're working on?
+      placeholder: Work/Product description.
+    validations:
+      required: true
+  - type: input
+    id: group
+    attributes:
+      label: ADI Group Name
+      description: What group are you working in?
+      placeholder: industrial, comsumer...
+    validations:
+      required: false
+  - type: checkboxes
+    id: terms
+    attributes:
+      label: Code of Conduct
+      description: By submitting this issue, you agree to follow our [Code of Conduct](https://example.com)
+      options:
+        - label: I agree to follow this project's Code of Conduct
+          required: true
 
