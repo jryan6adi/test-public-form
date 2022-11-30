@@ -3,7 +3,7 @@ description: Request a new component in the Harmonic Design System
 title: "[Component]: "
 labels: ["component", "triage", "request"]
 assignees:
-  - octocat
+  - jryan6adi
 body:
   - type: markdown
     attributes:
