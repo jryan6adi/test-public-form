@@ -1,0 +1,59 @@
+name: Component Request
+description: Request a new component in the Harmonic Design System
+title: "[Component]: "
+labels: ["component", "triage"]
+assignees:
+  - matthieu-souteyrand-adi
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for your interest and engagement with the Harmonic Design System!
+  - type: input
+    id: contact
+    attributes:
+      label: Contact Details
+      description: How can we get in touch with you if we need more info?
+      placeholder: ex. email@example.com
+    validations:
+      required: true
+  - type: input
+    id: name
+    attributes:
+      label: Component Name
+      description: Suggest a name for your component.
+      placeholder: dropdown, input, button
+    validations:
+      required: true
+  - type: textarea
+    id: description
+    attributes:
+      label: What behaviour and UI should this component have?
+      description: Also tell us, can you provide any examples of similar components in other systems or libraries?
+      placeholder: Component description.
+    validations:
+      required: true
+  - type: input
+    id: group
+    attributes:
+      label: ADI Group Name
+      description: What group are you working in?
+      placeholder: industrial, comsumer...
+    validations:
+      required: false
+  - type: textarea
+    id: product
+    attributes:
+      label: Is your request related to a product being actively developed?
+      description: If so, can you briefly describe it and its target audience?
+      placeholder: Yes, it is a design tool for RF design engineers.
+    validations:
+      required: true
+  - type: checkboxes
+    id: terms
+    attributes:
+      label: Code of Conduct
+      description: By submitting this issue, you agree to follow our [Code of Conduct](https://example.com)
+      options:
+        - label: I agree to follow this project's Code of Conduct
+          required: true
