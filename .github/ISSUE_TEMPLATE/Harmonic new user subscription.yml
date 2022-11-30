@@ -22,7 +22,7 @@ body:
     attributes:
       label: New user
       description: Subscribe as a new Harmonic user
-      placeholder: dropdown, input, button
+      placeholder: Enter your name
     validations:
       required: true
   - type: textarea
